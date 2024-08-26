@@ -14,7 +14,8 @@
         android:layout_height="match_parent"
         android:background="@drawable/gradient_background_screen2"
         app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="-202dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <LinearLayout
         android:id="@+id/linearLayout2"
@@ -37,7 +38,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:tint="#2401E7" />
+            app:tint="@color/white" />
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -51,47 +52,31 @@
                 android:layout_marginStart="16dp"
                 android:text="WELCOME BACK"
                 android:textStyle="italic"
-                android:textColor="@color/black" />
+                android:textColor="@color/white" />
 
             <ImageView
                 android:layout_width="32dp"
                 android:layout_height="match_parent"
                 android:layout_marginStart="2dp"
                 android:paddingTop="5dp"
+                app:tint="@color/white"
                 android:src="@drawable/similelogo"/>
 
         </LinearLayout>
     </LinearLayout>
 
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:background="@drawable/gradiend_color_logo"
-        android:paddingLeft="16dp"
-        android:paddingTop="8dp"
-        android:paddingRight="16dp"
-        android:paddingBottom="8dp"
-        android:text="STORE PERFECT"
-        android:textColor="#FFFFFF"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
-
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:cardCornerRadius="28dp"
         android:layout_marginBottom="-20dp"
+        app:cardCornerRadius="28dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
         app:layout_constraintVertical_bias="1.0">
 
 
@@ -140,14 +125,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="username"
-                app:cursorColor="@color/black"
                 app:boxStrokeColor="@color/hintcolorinputfield"
+                app:cursorColor="@color/black"
                 app:hintTextColor="@color/hintcolorinputfield"
                 tools:layout_editor_absoluteX="-6dp"
                 tools:layout_editor_absoluteY="310dp">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
+                    android:id="@+id/editText_username"
                     android:layout_height="wrap_content"
                     android:inputType="text" />
 
@@ -160,8 +146,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:hint="password"
-                app:cursorColor="@color/black"
                 app:boxStrokeColor="@color/hintcolorinputfield"
+                app:cursorColor="@color/black"
                 app:hintTextColor="@color/hintcolorinputfield"
                 app:passwordToggleEnabled="true"
                 tools:layout_editor_absoluteX="-6dp"
@@ -169,6 +155,7 @@
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
+                    android:id="@+id/editText_password"
                     android:layout_height="wrap_content"
                     android:inputType="textPassword" />
 
@@ -176,58 +163,51 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/btn_submit"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:background="@drawable/gradiend_color_logo"
                 android:text="Login"
+                android:layout_marginBottom="80dp"
                 android:textColor="@color/white"
                 app:backgroundTint="@null"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="50dp">
 
-
-                <CheckBox
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentStart="true"
-                    android:layout_centerVertical="true"
-                    android:layout_marginStart="0dp"
-                    android:layout_marginEnd="100dp"
-                    android:layout_toStartOf="@+id/textView4"
-                    android:alpha="0.7"
-                    android:text="Remember me" />
-
-                <TextView
-                    android:id="@+id/textView4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentRight="true"
-                    android:layout_centerVertical="true"
-                    android:text="i forget my password" />
-
-            </RelativeLayout>
 
             <TextView
-                android:id="@+id/textView3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:text="version"
+                android:id="@+id/textView_version_id"
                 android:textColor="@color/endcolor"
                 android:textSize="18sp" />
         </LinearLayout>
 
 
     </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/gradiend_color_logo"
+        android:paddingLeft="16dp"
+        android:paddingTop="8dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="8dp"
+        android:text="STORE PERFECT"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
 
 
 

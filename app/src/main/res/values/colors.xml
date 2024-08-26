@@ -14,4 +14,25 @@
     <color name="endcolor">#0051B4</color>
     <color name="versioncolor">#03142A</color>
 
+    <color name="colorTextWhite">#ffffff</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorTextBlack">#000000</color>
+    <color name="colorBlack">#000000</color>
+    <color name="borderColor">#4B4C4E</color>
+    <color name="logoColor">#007AC2</color>
+    <color name="TextColor">#1E1D1D</color>
+
+    <color name="colorEditText">#14000000</color>
+    <color name="colorButton">#0E68FF</color>
+    <color name="colorButtonText">#ffffff</color>
+    <color name="colorPlaceholder">#505050</color>
+    <color name="colorTextPrimary">#0E68FF</color>
+
+    <color name="ButtonColor">#1C35CA</color>
+    <color name="endColor">#0051B4</color>
+
+
+
+
+
 </resources>
