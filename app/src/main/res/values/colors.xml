@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="hintcolorinputfield">#3C3A3A</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="Button1">#ff5733</color>
+    <color name="Button2">#09dc89</color>
+    <color name="ststusbar">#0ffc90</color>
+    <color name="Button3">#0384c9</color>
+    <color name="Button4">#ff4141</color>
+    <color name="Button5">#6a8f99</color>
+    <color name="startcolor">#006EFD</color>
+    <color name="hintstorecolor">#2885FF</color>
+    <color name="endcolor">#0051B4</color>
+    <color name="versioncolor">#03142A</color>
+
+</resources>

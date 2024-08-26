@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:id="@+id/button_1"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="200dp"
+        android:text="Login Button 1"
+        android:elevation="2dp"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/Button1"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:id="@+id/button_2"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Login Button 2"
+        android:elevation="2dp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/Button2"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:id="@+id/button_3"
+        android:elevation="2dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Login Button 3"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/Button3"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:id="@+id/button_4"
+        android:layout_marginTop="20dp"
+        android:elevation="2dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Login Button 4"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/Button4"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:id="@+id/button_5"
+        android:layout_marginTop="20dp"
+        android:elevation="2dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Login Button 5"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/Button5"/>
+
+
+</LinearLayout>
